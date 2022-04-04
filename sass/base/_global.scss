@@ -1,0 +1,70 @@
+body {
+    font-family: $main-font-style,
+    '-apple-system', 'BlinkMacSystemFont',
+    'avenir next', 'avenir', 'segoe ui', 'helvetica neue', 
+    'helvetica', 'Ubuntu', 'noto', 'arial', sans-serif;
+    font-size: $font-size-small;
+    color: $title-text-color;
+
+    background-color: $primary-white-color;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $secondary-black-color;
+
+    @media (min-width:1200px) {
+        font-size: 26px;
+    }
+}
+
+.logo {  
+  & span {
+        color: $accent-color;
+    }
+}
+
+
+.title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: $font-size-xl;
+    }
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+}
